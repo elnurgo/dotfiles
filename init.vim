@@ -10,7 +10,7 @@ set encoding=utf-8
 "----------------------------------------------------------------------
 " Plugins
 "----------------------------------------------------------------------
-call plug#begin('~/.nvim/plugged')
+call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
