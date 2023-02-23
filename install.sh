@@ -12,5 +12,5 @@ sudo chown root:root nvim
 sudo mv nvim /usr/bin
 
 mkdir -p ~/.config/nvim/site/autoload/
-curl -fLo ~/.config/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -s /workspaces/.codespaces/.persistedshare/dotfiles/init.vim ~/.config/nvim/init.vim 
