@@ -5,11 +5,10 @@ sudo apt remove neovim
 sudo apt install -y git fuse libfuse2
 
 # install latest nvim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
+chmod +x nvim
+sudo chown root:root nvim
+sudo chown root:root nvim
 
-mkdir -p ~/.local/bin/ ~/.local/share/nvim/site/autoload/
-mv nvim.appimage ~/.local/bin/nvim
-
-sh -c 'curl -fLo  ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -s ~/.vimrc /workspaces/.codespaces/.persistedshare/dotfiles/init.vim
