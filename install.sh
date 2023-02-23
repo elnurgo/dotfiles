@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt remove neovim
-sudo apt install -y git fuse libfuse2
+sudo apt install -y git libfuse2
 
 # install latest nvim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
