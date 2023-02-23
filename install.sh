@@ -9,5 +9,5 @@ sudo apt install -y git fuse2 libfuse2
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 
-mv nvim.appimage /bin/nvim.appimage
-sudo mv init.vim ~/init.vim
+sudo mv nvim.appimage /bin/nvim.appimage
+mv init.vim ~/init.vim
