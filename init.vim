@@ -10,7 +10,7 @@ set encoding=utf-8
 "----------------------------------------------------------------------
 " Plugins
 "----------------------------------------------------------------------
-call plug#begin()
+call plug#begin('~/.nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -454,4 +454,3 @@ nmap <C-PageUp> F\|F\|2l
 nmap <C-PageDown> f\|2l
 
 nmap <leader>cp :Copilot panel<CR>
-
