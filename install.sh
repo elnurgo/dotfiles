@@ -5,6 +5,7 @@ sudo apt remove neovim
 sudo add-apt-repository ppa:deadsnakes/ppa
 
 sudo apt install python3.9 git libfuse2 fuse pip3 software-properties-common -y
+pip3 install neovim
 
 # install latest nvim
 wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
