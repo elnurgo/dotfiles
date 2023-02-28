@@ -4,7 +4,7 @@ sudo apt upgrade -y
 sudo apt remove neovim
 sudo add-apt-repository ppa:deadsnakes/ppa
 
-sudo apt install git fuse libfuse2 pip software-properties-common -y
+sudo apt install -y git nodejs npm fuse libfuse2 pip software-properties-common
 pip install neovim
 
 # install latest nvim
@@ -13,6 +13,9 @@ chmod +x nvim
 sudo chown root:root nvim
 sudo mv nvim /usr/bin
 
-mkdir -p ~/.config/nvim/autoload/ ~/.nvim/plugged/
+# install plug.vim
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -s /workspaces/.codespaces/.persistedshare/dotfiles/init.vim ~/.config/nvim/init.vim 
+
+# link and create needed files&folders
+mkdir -p ~/.nvim/plugged/
+ln -s init.vim ~/.config/nvim/init.vim 
